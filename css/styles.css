@@ -1,1 +1,55 @@
-/* Styles */
+.clearfix:after{
+    content: "."; 
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix { 
+    display: inline-block;
+}
+* html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    
+}
+
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header, footer{
+    background: lightgrey;
+    text-align: center;
+
+}
+
+
+/* -- Grid Styles -- */
+.col-container{
+    border: 3px solid darkcyan;
+    width: 100%;
+}
+.col-2{
+    margin: 10rem 0;
+    background: yellow;
+}
+
+@media screen and (min-width: 600px){
+    .col-2 {
+        float: left;
+        width: 50%;
+        padding: 2rem;
+    }
+}

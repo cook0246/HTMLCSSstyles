@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Style Reference</title>
-    <link rel="stylesheet" href="css/styles.css">
-    
+    <title>Clearfix</title>
+    <link rel="stylesheet" href="css/styles.css" media ="screen" type = "text/css"> 
 </head>
 
 <body>
+    <header>
+        <h1>Clearfix Lesson</h1>
+    </header>
+    
+    <div class = "wrapper">
+        <h2>test wrapper</h2>
+        <section class = "col-container clearfix">
+            <div class = "col-2">
+                <article class = "sub-article clearfix">
+                    <h3>Col-2</h3>
+                    <p>this is a 2 column layout. this is one of the col-2</p>
+                </article>
+            </div>
+            
+            <div class = "col-2">
+                <article class = "sub-article clearfix">
+                    <h3>Col-2</h3>
+                    <p>this is a 2 column layout. this is one of the col-2</p>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    
+    <footer>
+        <p>copyright 2014</p>
+    </footer>
+    
+    
+    
+    
     
 </body>
+    
 </html>
